@@ -42,4 +42,6 @@ var friends = [
     photo: "image.png",
     scores: [3, 3, 4, 3, 5, 5, 2, 2, 3, 4]
     },
-]
+]; 
+
+module.exports = friends;

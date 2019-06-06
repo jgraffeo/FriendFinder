@@ -28,9 +28,9 @@ $("#submit").on("click", function() {
       };
       var currentURL = window.location.origin;
       $.post(currentURL + "/api/friends", userData, function(data) {
-        $("#matchName").text(data.name);
-        $("#matchImg").attr("src", data.photo);
-        $("#resultsModal").modal("toggle");
+        $("#matchname").text(data.name);
+        $("#matchimage").attr("src", data.photo);
+        $("#modalresults").modal("toggle");
       });
     } else {
       alert("Please fill out all fields before submitting!");

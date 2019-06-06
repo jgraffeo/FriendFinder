@@ -162,7 +162,7 @@
         </div>
 </div>   
 
-<div id="resultsModal" class="modal fade" role="dialog">
+<div id="modalresults" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -224,7 +224,7 @@ $("#submit").on("click", function() {
       $.post(currentURL + "/api/friends", userData, function(data) {
         $("#matchname").text(data.name);
         $("#matchimage").attr("src", data.photo);
-        $("#resultsModal").modal("toggle");
+        $("#modalresults").modal("toggle");
       });
     } else {
       alert("Please fill out all fields before submitting!");
